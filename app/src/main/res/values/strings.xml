@@ -1,0 +1,44 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Rolling Loud</string>
+    <string name="app_description">Description</string>
+    <string name="app_headliners">Headliners</string>
+    <string name="app_maps">Location</string>
+    <string name="app_websites">Our websites</string>
+    <string name="app_questions">User Input</string>
+
+    <string name="description"> The Rolling Loud Festival is a 3-day outdoor music event that started in Miami, FL and has become one of the biggest Hip-Hop festivals in the world. In addition, we are locating festivals within New York, California, along with plans to expand internationally to Eastern Asia and Europe in the near future.</string>
+    <string name="important_notices">Important Notices</string>
+    <string name="address">Address: 347 Don Shula Dr. Miami Gardens, FL 33056</string>
+    <string name="dates">Dates: 8/5/20 – 3PM–12AM // 9–10/5/20 – 12PM - 12AM</string>
+    <string name="vip">You will need photographic ID to get access to VIP sections + Receipt of purchase and Card used to purchase :)</string>
+    <string name="extras">Food will be available to all with different dietary requirements - Lockers will be available to all - Handicap accessible - Cannot sell or take professional photographs without our permission</string>
+
+    <string name="website_description">Click one of the following icons below to take you to one of our pages.</string>
+    <string name="youtube">Youtube</string>
+    <string name="rolling_loud">Rolling Loud Official Website</string>
+    <string name="instagram">Instagram</string>
+    <string name="todo">TODO</string>
+
+    <string name="headliners_description">Here are some of our headliners that will be performing next year, click on them for more info ;)</string>
+    <string name="chris_brown">Chris Brown</string>
+    <string name="the_weeknd">The Weeknd</string>
+    <string name="drake">Drake</string>
+    <string name="kendrick_lamar">Kendrick Lamar</string>
+    <string name="sza">SZA</string>
+    <string name="billie_eilish">Billie Eilish</string>
+    <string name="future">Future</string>
+    <string name="travis_scott">Travis Scott</string>
+
+    <string name="send">Send</string>
+    <string name="user_input">Here you can submit questions or improvements we could make to the app to make yours and others experiences better. Click below to enter :)</string>
+    <string name="input_hint">Input your advise and questions for our app and concert</string>
+
+    <string name="chris_description">One of the greatest multi-talented entertainers of our time and history, Breezy prolific hits ranging from R+B, Hip-Hop, Europop//EDM, Pop, Soul and more. Electrifying choreography along with his beautiful vocals will give everyone a good time.</string>
+    <string name="weeknd_description">The Weeknd has a voice with no measure in terms of the power and pain it brings to explore your emotions and memories to depths few have reached. The talented individual will perform to the highest degree.</string>
+    <string name="drake_description">Quite possibly the most famous artist in the world right now, everything he touches turns to gold..literally. Drizzy brings the bangers from slow, melodic jams to uplifting flexing to uptempo rap anthems.</string>
+    <string name="kendrick_description">The most accoladed individual in the rap game, Kendrick has deep, searing lyrics into a number of influential topics such as systematic racism, poverty and struggles with drugs that you will unite us all.</string>
+    <string name="sza_description">A newcomer to the Soul and Alternative R+B genre, SZA has already established herself as a mainstream artist, acknowledged by legends and her fellow competition.</string>
+    <string name="billie_description">Taking the pop world by storm, Billie Eilish brings more darker themes into fruition whilst keeping herself on top of the charts constantly, using bombastic production with angelic vocals.</string>
+    <string name="future_description">A pioneer in the mumble rap game, Future brings his unique and melodic flow to any situation and turns it up to the next level. </string>
+    <string name="travis_description">Literally causing raves wherever he performs, Travis has trap anthems that will have the entire crowd jumping up and down due the endless energy he brings to every song.</string>
+</resources>

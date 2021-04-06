@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Here I implement the "custom_...".xml files and set them as background to the text to give a
+    more tropical feel to the app, also whilst using the "custom_...".xml backgrounds.
+
+    Link used for the tutorial: https://www.youtube.com/watch?v=nlPtfncjOWA
+-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/description"
+    tools:context=".Description">
+
+    <TextView
+        android:id="@+id/descriptionText"
+        android:layout_width="386dp"
+        android:layout_height="129dp"
+        android:background="@drawable/custom_descriptiontext"
+        android:gravity="center"
+        android:text="@string/description"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.207" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="196dp"
+        android:layout_height="124dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:id="@+id/noticesText"
+        android:layout_width="133dp"
+        android:layout_height="24dp"
+        android:background="@drawable/custom_policies"
+        android:gravity="center"
+        android:text="@string/important_notices"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.374" />
+
+    <TextView
+        android:id="@+id/addressText"
+        android:layout_width="393dp"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_headliners"
+        android:gravity="center"
+        android:text="@string/address"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.523" />
+
+    <TextView
+        android:id="@+id/datesText"
+        android:layout_width="390dp"
+        android:layout_height="43dp"
+        android:background="@drawable/custom_dates"
+        android:gravity="center"
+        android:text="@string/dates"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.433" />
+
+    <TextView
+        android:id="@+id/vipText"
+        android:layout_width="366dp"
+        android:layout_height="71dp"
+        android:background="@drawable/custom_description"
+        android:gravity="center"
+        android:text="@string/vip"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.96" />
+
+    <TextView
+        android:id="@+id/extraInfoText"
+        android:layout_width="379dp"
+        android:layout_height="89dp"
+        android:background="@drawable/custom_policies"
+        android:gravity="center"
+        android:text="@string/extras"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.682" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

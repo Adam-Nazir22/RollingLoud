@@ -1,0 +1,32 @@
+<resources>
+<!--
+    Here I make the app have no action bar in order for the app to have a more sleek look.
+
+    In order to change that, you can simply remove "NoActionBar" and the application will give you
+    options to help with your preference for the action bar.
+
+    Link used for the tutorial: https://www.youtube.com/watch?v=ES_Zp4aAK3M
+
+    In addition, I make my own style which helps with my pop up window, allow the user to leave the
+    pop window by clicking the outside of it, whilst giving the rest of the app a darker look whilst
+    reading the pop up.
+
+    Link used for the tutorial: https://www.youtube.com/watch?v=eX-TdY6bLdg
+-->
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.popUp">
+
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name = "android:windowBackground" > @android:color/transparent</item>
+
+    </style>
+
+</resources>

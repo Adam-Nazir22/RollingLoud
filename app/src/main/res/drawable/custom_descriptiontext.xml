@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Used HTML color codes to find a preferred colour scheme: https://htmlcolorcodes.com/
+
+    Shape is a rectangle as that is the usual shape of a text box. Therefore using the <corners>
+    allows me to curve the corners to be more appealing.
+
+    A gradient with a linear type allows the colours to equal match in their dispersion within the
+    xml file.
+
+    Link to the video tutorial: https://www.youtube.com/watch?v=nlPtfncjOWA
+-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <gradient android:startColor="#D2B4DE" android:endColor="#F9E79F" android:type="linear"/>
+    <corners android:radius="10dp"/>
+</shape>

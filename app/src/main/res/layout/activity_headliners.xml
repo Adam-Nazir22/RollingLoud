@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Here I use images of the artist and place them within the button along with the text to display
+    their artist name, also whilst using the "custom_...".xml backgrounds.
+
+    Artists have their own separate pop up xml's e.g. chris_brown.xml - Differentiates between all
+    of them in terms of description, photo and background of the artists' pop up.
+
+    Artists have the Style Pop Up in the Styles section of Values in the res folder - Implemented to
+    every artists' xml file in Android Manifest.
+
+    Link used for the tutorial of making pop up windows: https://www.youtube.com/watch?v=eX-TdY6bLdg
+
+    Link used for the tutorial of putting the image and text together: https://stackoverflow.com/questions/4457030/how-to-show-the-text-on-a-imagebutton
+
+    Link used to reduce the image sizes: https://www.reduceimages.com/ - Images were downloaded in
+    200x200 - reduced by 40% through the link.
+
+    Link used for the tutorial of making coloured backgrounds: https://www.youtube.com/watch?v=nlPtfncjOWA
+-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/headlines"
+    tools:context=".Headliners">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="233dp"
+        android:layout_height="95dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.009"
+        android:contentDescription="@string/todo" />
+
+    <Button
+        android:id="@+id/chris_brown"
+        android:layout_width="172dp"
+        android:layout_height="68dp"
+        android:background="@drawable/custom_headliners"
+        android:drawableStart="@drawable/chris_brown"
+        android:drawableLeft="@drawable/chris_brown"
+        android:gravity="center"
+        android:text="@string/chris_brown"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.259"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/headlinersDescription"
+        android:layout_width="381dp"
+        android:layout_height="45dp"
+        android:background="@drawable/custom_performers"
+        android:gravity="center"
+        android:text="@string/headliners_description"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.169" />
+
+    <Button
+        android:id="@+id/the_weeknd"
+        android:layout_width="172dp"
+        android:layout_height="68dp"
+        android:background="@drawable/custom_description"
+        android:drawableStart="@drawable/the_weeknd"
+        android:drawableLeft="@drawable/the_weeknd"
+        android:gravity="center"
+        android:text="@string/the_weeknd"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.935"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.259" />
+
+    <Button
+        android:id="@+id/drake"
+        android:layout_width="172dp"
+        android:layout_height="68dp"
+        android:background="@drawable/custom_dates"
+        android:drawableStart="@drawable/drake"
+        android:drawableLeft="@drawable/drake"
+        android:text="@string/drake"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.401" />
+
+    <Button
+        android:id="@+id/kendrick_lamar"
+        android:layout_width="172dp"
+        android:layout_height="68dp"
+        android:background="@drawable/custom_policies"
+        android:drawableLeft="@drawable/kendrick_lamar"
+        android:drawableStart="@drawable/kendrick_lamar"
+        android:text="@string/kendrick_lamar"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.401" />
+
+    <Button
+        android:id="@+id/sza"
+        android:layout_width="172dp"
+        android:layout_height="68dp"
+        android:background="@drawable/custom_descriptiontext"
+        android:drawableLeft="@drawable/sza"
+        android:drawableStart="@drawable/sza"
+        android:text="@string/sza"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.543" />
+
+    <Button
+        android:id="@+id/billie_eilish"
+        android:layout_width="172dp"
+        android:layout_height="68dp"
+        android:background="@drawable/custom_headliners"
+        android:drawableLeft="@drawable/billie_eilish"
+        android:drawableStart="@drawable/billie_eilish"
+        android:text="@string/billie_eilish"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.543"/>
+
+    <Button
+        android:id="@+id/future"
+        android:layout_width="172dp"
+        android:layout_height="68dp"
+        android:background="@drawable/custom_description"
+        android:drawableLeft="@drawable/future"
+        android:drawableStart="@drawable/future"
+        android:text="@string/future"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.685" />
+
+    <Button
+        android:id="@+id/travis_scott"
+        android:layout_width="172dp"
+        android:layout_height="68dp"
+        android:background="@drawable/custom_dates"
+        android:drawableLeft="@drawable/travis_scott"
+        android:text="@string/travis_scott"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.685"
+        android:drawableStart="@drawable/travis_scott" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

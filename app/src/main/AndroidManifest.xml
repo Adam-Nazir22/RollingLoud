@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rollingloud">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key"/>
+        <uses-library android:name="com.google.android.maps"/>
+
+        <activity android:name=".Homescreen" />
+        <activity android:name=".Map"/>
+        <activity android:name=".Description" />
+        <activity android:name=".Headliners"/>
+        <activity android:name=".Websites"/>
+        <activity android:name=".Questions"/>
+        <activity android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".artists.PopChrisBrown"
+            android:theme="@style/AppTheme.popUp">
+        </activity>
+        <activity android:name=".artists.PopFuture"
+            android:theme="@style/AppTheme.popUp">
+        </activity>
+        <activity android:name=".artists.PopTheWeeknd"
+            android:theme="@style/AppTheme.popUp">
+        </activity>
+        <activity android:name=".artists.PopDrake"
+            android:theme="@style/AppTheme.popUp">
+        </activity>
+        <activity android:name=".artists.PopSZA"
+            android:theme="@style/AppTheme.popUp">
+        </activity>
+        <activity android:name=".artists.PopTravisScott"
+            android:theme="@style/AppTheme.popUp">
+        </activity>
+        <activity android:name=".artists.PopKendrickLamar"
+            android:theme="@style/AppTheme.popUp">
+        </activity>
+        <activity android:name=".artists.PopBillieEilish"
+            android:theme="@style/AppTheme.popUp">
+        </activity>
+    </application>
+
+</manifest>
+
+    <!--
+
+    Android Coding. (2018, December 7). How to Implement Google Map in Android Studio | GoogleMap | Android Coding [Video file]. Retrieved from https://www.youtube.com/watch?v=eiexkzCI8m8
+
+    Angga Risky. (2017, September 11). Customize Pop Up Window in Android Studio Tutorial [Video file]. Retrieved from https://www.youtube.com/watch?v=eX-TdY6bLdg
+
+    AR Coder. (2017, March 4). How to open any website by clicking a button in Android Studio. [Video file]. Retrieved from https://www.youtube.com/watch?v=FXS2UsZWhok
+
+    AvS. (2018, February 27). Remove title bar in Android Studio [Video file]. Retrieved from https://www.youtube.com/watch?v=ES_Zp4aAK3M
+
+    kendrick_lamar.jpg
+    -
+    Best Music Wiki. (2019). Kendrick Lamar [Online image]. Retrieved from   https://bestmusic.fandom.com/wiki/Kendrick_Lamar
+
+    Code Classic. (2018, March 30). Android Studio Design - TextView background transparency [Video file]. Retrieved from https://www.youtube.com/watch?v=EUcXmsFetP4
+
+    Coding in Flow. (2017, October 11). How to Make a Button Open a New Activity - Android Studio Tutorial [Video file]. Retrieved from https://www.youtube.com/watch?v=bgIUdb-7Rqo
+
+    logo.jpg
+    -
+    Font Meme. (2020). Rolling Loud Font [Online image]. Retrieved from https://fontmeme.com/rolling-loud-font/
+
+    Google.(2020). Get Started | Maps SDK for Android. Retrieved from https://developers.google.com/maps/documentation/android-sdk/start
+
+    Google (n.d). Destination for the Hard Rock Stadium [Map] Retrieved from  https://www.google.com/maps/place/Hard+Rock+Stadium/@25.9579665,-80.2410491,17z
+
+    ic_event_note_black_40dp.xml
+    -
+    Google. (n.d.). ic_event_note_black_40dp.xml [Clip Art]. Android Studio Asset Type. Retrieved from Android Studio
+
+    ic_my_location_black_40dp.xml
+    -
+    Google. (n.d.). ic_my_location_black_40dp.xml [Clip Art]. Android Studio Asset Type. Retrieved from Android Studio
+
+    ic_public_black_40dp.xml
+    -
+    Google. (n.d.). ic_public_black_40dp.xml [Clip Art]. Android Studio Asset Type. Retrieved from Android Studio
+
+    ic_verified_user_black_24dp.xml
+    -
+    Google. (n.d.). ic_verified_user_black_24dp.xml [Clip Art]. Android Studio Asset Type. Retrieved from Android Studio
+
+    ic_view_headline_black_40dp.xml
+    -
+    Google. (n.d.). ic_view_headline_black_40dp [Clip Art]. Android Studio Asset Type. Retrieved from Android Studio
+
+    Hòa, V.Q. (2010, December 16). How to show the text on a ImageButton?. Retrieved from https://stackoverflow.com/questions/4457030/how-to-show-the-text-on-a-imagebutton
+
+    Hendro Pramono, H.P. (2017). How to Create App Launcher Icon in Android Studio. Retrieved from https://www.youtube.com/watch?v=cXACM2e0ISE
+
+    drake.jpg
+    -
+    Jango. (2019). Drake [Online image]. Retrieved from https://www.jango.com/music/Drake
+
+    the_weeknd.jpg
+    -
+    Jango.(2019). The Weeknd [Online image]. Retrieved from https://www.jango.com/music/The+Weeknd
+
+    youtube_icon.jpg
+    -
+    ODPi. (n.d.). YouTube-icon-200×200 [Online image]. Retrieved from https://www.odpi.org/data-governance/attachment/youtube-icon-200x200
+
+    billie_eilish.jpg
+    -
+    Pinterest. (2019). Billie Eilish - everything i wanted (Triaddix Remix) [Online image]. Retrieved from https://www.pinterest.com/pin/811492426592163087/
+
+    future.jpg
+    -
+    Pinterest. (2020). Famous Sound Wave - Future Type Beat [Online image]. Retrieved from https://www.pinterest.com/pin/549368854528117919/
+
+    Websites.jpg
+    -
+    Pinterest. (2020). Hotline Miami Wallpaper [Online image]. Retrieved from https://www.pinterest.com/pin/388717011584640037/
+
+    sza.jpg
+    -
+    Pinterest. (2019). Musician to Know: SZA - Man Repeller [Online image]. Retrieved from https://www.pinterest.co.uk/pin/654851602038243331/
+
+    homescreen.jpg
+    -
+    Pinterest. (2020). Palm-Trees-of-Miami-iPhone-Wallpaper-469×832 [Online image]. Retrieved from https://www.pinterest.co.uk/pin/848224911056951579/
+    description.jpg
+    -
+    Rolling Loud. (2020). ROLLING LOUD WALLPAPERS [Online image]. Retrieved from https://www.rollingloud.com/wallpapers
+
+    questions.jpg
+    -
+    Rolling Loud [Rolling Loud]. (2018, November 23). 21 DAYS UNTIL WE TOUCH DOWN IN LA [Tweet]. Retrieved from https://twitter.com/RollingLoud/status/1066001755136245760
+
+    Sciker. (2018, July 24). How to check EditText User Input is empty in Android Studio [Video file]. Retrieved from https://www.youtube.com/watch?v=DLtlJohaYTI
+
+    chris_brown.jpg
+    -
+    Stereoboard.(2019). Chris Brown at Charlotte [Online image]. Retrieved from https://www.stereoboard.com/chris-brown-tickets/charlotte
+
+    Stevdza-San. (2018, October 10). Custom Buttons Design - Android Studio Tutorial [Video file]. Retrieved from https://www.youtube.com/watch?v=nlPtfncjOWA
+
+    instagram_logo.jpg
+    -
+    StickPNG. (n.d.). Download Instagram Logo transparent PNG [Online image]. Retrieved from https://www.stickpng.com/img/icons-logos-emojis/tech-companies/instagram-logo
+
+    T.S. Taimoor Sikander - Coding with T.. (2020, January 7). Android Splash Screen with Animations in Android Studio | 2020 Material Design [Video file]. Retrieved from https://www.youtube.com/watch?v=JLIFqqnSNmg
+
+    Tsunaze, T. (2010, December 16). Align text center with android. Retrieved from https://stackoverflow.com/questions/7326155/align-text-center-with-android
+
+    travis_scott.jpg
+    -
+    Vancouver Weekly. (2019). Travis Scott goes Sicko Mode at Rogers Arena [Online image]. Retrieved from https://vancouverweekly.com/travis-scott-goes-sicko-mode-at-rogers-arena-62766-2/
+
+    headlines.jpg
+    -
+    Wallpaper Safari. (2019). Wallpapers Rolling Loud Festival [Online image]. Retrieved from https://wallpapersafari.com/w/OMNJK7/
+
+    -->

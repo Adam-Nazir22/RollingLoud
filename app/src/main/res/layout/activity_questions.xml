@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Using the tutorial:https://www.youtube.com/watch?v=DLtlJohaYTI - I made an editext with a hint
+    so that when user input text is removed with the button - The hint text is still there to help
+    the user out, also whilst using the "custom_...".xml backgrounds - Toast message is displayed
+    with if and else statements.
+
+    Link used for the tutorial of making coloured backgrounds
+    : https://www.youtube.com/watch?v=nlPtfncjOWA
+
+    Link used to make text gravitate towards the center
+    : https://stackoverflow.com/questions/7326155/align-text-center-with-android
+-->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Questions"
+    android:background="@drawable/questions"
+    >
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="196dp"
+        android:layout_height="124dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.026"
+        app:srcCompat="@drawable/logo"
+        android:contentDescription="@string/todo" />
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="132dp"
+        android:layout_height="61dp"
+        android:background="@drawable/custom_policies"
+        android:text="@string/send"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.655" />
+
+    <TextView
+        android:id="@+id/inputDescription"
+        android:layout_width="392dp"
+        android:layout_height="80dp"
+        android:background="@drawable/custom_description"
+        android:gravity="center"
+        android:text="@string/user_input"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.241" />
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="388dp"
+        android:layout_height="105dp"
+        android:autofillHints=""
+        android:background="@drawable/custom_dates"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/input_hint"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:inputType="textShortMessage"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    This is where the API key to allow you to use Google Maps within the app stored within a string
+    to make it simpler to retrieve in different sections.
+-->
+<resources>
+    <string name="map_key" translatable="false">
+        AIzaSyB_qsP8AOP_P0MdlPz-48TDaJYjTP3vbjo
+    </string>
+</resources>
